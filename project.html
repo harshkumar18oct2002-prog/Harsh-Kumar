@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Your Name</title>
+<meta name="description" content="Selected projects by Your Name — web apps, JavaScript tools and UI/UX work.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="project">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <nav class="nav-inner" aria-label="Primary">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-bracket">&lt;</span>HK<span class="nav-logo-bracket">/&gt;</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link" data-nav data-page="home">Home</a></li>
+      <li><a href="about.html" class="nav-link" data-nav data-page="about">About</a></li>
+      <li><a href="service.html" class="nav-link" data-nav data-page="service">Service</a></li>
+      <li><a href="project.html" class="nav-link" data-nav data-page="project">Projects</a></li>
+      <li><a href="contact.html" class="nav-link" data-nav data-page="contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3 7.2 7.2 0 0 0 21 12.8z"></path>
+        </svg>
+      </button>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header">
+    <div class="section-inner">
+      <p class="section-kicker" data-reveal>Projects</p>
+      <h1 class="page-title" data-reveal>Things I've built recently</h1>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="projects" id="projects">
+    <div class="section-inner">
+
+      <div class="filter-bar" data-reveal role="group" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="web" type="button">Web</button>
+        <button class="filter-btn" data-filter="javascript" type="button">JavaScript</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid" data-reveal>
+
+        <article class="project-card" data-category="web">
+          <div class="project-visual" style="--pv-a:#8b6cf1; --pv-b:#5b3fc9;">
+            <span class="project-visual-tag">01</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Patna Public School</h3>
+            <p class="project-desc">An School Website with live Admisson forms, Light Good Looking Themd
+              Stuructur.</p>
+            <ul class="project-tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://schools-demo-three.vercel.app/" class="btn btn-small btn-primary">Live Demo</a>
+              <a href="https://github.com/harshkumar18oct2002-prog/schools-demo" class="btn btn-small btn-ghost">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="javascript">
+          <div class="project-visual" style="--pv-a:#f3a34a; --pv-b:#d9762a;">
+            <span class="project-visual-tag">02</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Patna Care Hospital</h3>
+            <p class="project-desc">A responsive hospital website designed to showcase healthcare services, doctors, appointments and emergency facilities..</p>
+            <ul class="project-tags">
+              <li>Html</li><li>Css</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://hospital-nu-one.vercel.app/" class="btn btn-small btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-small btn-ghost">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <p>© <span id="year"></span> Your Name. Built with HTML, CSS &amp; JavaScript.</p>
+    <a href="#main" class="footer-top-link">Back to top ↑</a>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M12 19V5M5 12l7-7 7 7"></path>
+  </svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
